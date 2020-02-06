@@ -11,15 +11,27 @@
 
 <!-- This is a description of what you should do for this task.  You can remove it for your answer -->
 <section id="content">
-        <table>
+   
+        <table id="myTable2">
+        <caption>
+            <label>Sort by </label>
+            <select id="changeHandler">
+                <option value="0"> Name </option>
+                <option value="1"> Best bid price </option>
+                <option value="2"> Current Best ask price </option>
+                <option value="3"> lastChangeBid </option>
+                <option value="4"> lastChangeAsk </option>
+            </select>
+            <strong>Data will update after 30 second.</strong>
+        </caption>
         <thead>
         <tr>
         <th>Name</th>
         <th>Best bid price</th>
-        <th>Current Best ask price</th>
-        <th>lastChangeBid</th>
-        <th>lastChangeAsk</th>
-        <th>midprice</th>
+        <th>Current best ask price</th>
+        <th>last change bid</th>
+        <th>last Change ask</th>
+        <th>Mid price</th>
         </tr>
         </thead>
         <tbody id="tbody">
